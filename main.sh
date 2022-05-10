@@ -6,8 +6,6 @@ grepP() {
     fi
 
     grepPCountries=$(grep ^P countries)
-
-
     echo $grepPCountries | tr a-z A-Z
 
     if test -f "countries"; then
